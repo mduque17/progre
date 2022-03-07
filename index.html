@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Progresión y Regresión</title>
+</head>
+<body bgcolor="#A6BADD">
+
+<style>
+	.progre{
+		position: absolute;
+		display: none;
+
+	}
+	.ca1{
+		position: absolute;
+		display: none;
+	}
+	.ca2{
+		position: absolute;
+		display: none;
+	}
+	.ca3{
+		position: absolute;
+		display: none;
+	}
+     .titu{
+          position: absolute;
+          top: 5%;
+          left: 30%;
+          font-size: 40px;
+          color: aliceblue;
+          font-family: Trebuchet MS;
+     }
+     .titu1{
+          position: absolute;
+          top: -2%;
+          left: 3%;
+          font-size: 18px;
+          color: #7B68EE;
+          font-family: Trebuchet MS;
+     }
+     .titulo{
+          position: absolute;
+          top: -2%;
+          left: 3%;
+          font-size: 18px;
+          color: #7B68EE;
+          font-family: Trebuchet MS;
+     }
+     .caja{
+          position: absolute;
+          top: 120%;
+          left: 5%;
+          width: 90%;
+          height: 300%;
+          background-color: white;
+          border: 1px ;
+          border-radius: 30px;
+     }
+     .b1{
+          position: absolute;
+          top: 10%;
+          left: 5%;
+          width: 10%;
+          height: 7%;
+          color: black;
+          background-color:#F5EEF8 ;
+          border: 2px solid #8A2BE2;
+          border-radius: 20px;
+          font-family: Trebuchet MS;
+          font-size: 18px;
+     }
+      .b2{
+          position: absolute;
+          top: 34%;
+          left: 5%;
+          width: 10%;
+          height:7%;
+          color: black;
+          background-color:#F5EEF8 ;
+          border: 2px solid #8A2BE2;
+          border-radius: 20px;
+          font-family: Trebuchet MS;
+          font-size: 18px;
+
+
+     }
+     .b3{
+          position: absolute;
+          top: 57%;
+          left: 5%;
+          width: 10%;
+          height:7%;
+          color: black;
+          background-color:#F5EEF8 ;
+          border: 2px solid #8A2BE2;
+            border-radius: 20px;
+          font-family: Trebuchet MS;
+          font-size: 18px;
+
+     }
+     .b4{
+          position: absolute;
+          top: 79%;
+          left: 5%;
+          width: 10%;
+          height:7%;
+          color: black;
+          background-color:#F5EEF8 ;
+          border: 2px solid #8A2BE2;
+  border-radius: 20px;
+          font-family: Trebuchet MS;
+          font-size: 18px;
+     }
+     .progre{
+          position: absolute;
+          top: 19%;
+          left: 8%;
+          width: 90%;
+          height: 10%;
+          color: black;
+          
+     }
+     .p{
+          position: absolute;
+          top: 43%;
+          left: 0%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     }
+     .p1{
+          position: absolute;
+          top: 43%;
+          left: 16%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     }
+     .p2{
+          position: absolute;
+          top: 43%;
+          left: 30%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     }
+     .p3{
+          position: absolute;
+          top: 43%;
+          left: 40%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     }
+     .ca1{
+          position: absolute;
+          top: 43%;
+          left: 8%;
+          width: 90%;
+          height: 10%;
+          color: black;
+     }
+     .t{
+          position: absolute;
+          top: 45%;
+          left: 0%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     }
+     .t1{
+     
+          position: absolute;
+          top: 45%;
+          left: 15%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     
+     }
+     .ca2{
+          position: absolute;
+          top: 66%;
+          left: 8%;
+          width: 90%;
+          height: 10%;
+          color: black;
+
+               }
+     .tt{
+          position: absolute;
+          top: 50%;
+          left: 0%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     }
+      .tt1{
+          position: absolute;
+          top: 50%;
+          left: 15%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     }
+      .ca3{
+          position: absolute;
+          top:88%;
+          left: 8%;
+          width: 90%;
+          height: 10%;
+          color: black;
+     }
+     .le{
+          position: absolute;
+          top: 55%;
+          left: 0%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     }
+     .le1{
+          position: absolute;
+          top: 55%;
+          left: 15%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     }
+     .caja2{
+           position: absolute;
+          top: 460%;
+          left: 5%;
+          width: 90%;
+          height: 115%;
+          background-color: white;
+          border: 1px;
+          border-radius: 30px;
+     }
+     .caja3{
+          position: absolute;
+          top: 630%;
+          left: 5%;
+          width: 90%;
+          height: 100%;
+          background-color: white;
+          border: 1px;
+         border-radius: 30px;
+
+     }
+     .cajai{
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          width: 100%;
+          height: 100%;
+          background-color:#4575C8;
+     }
+     .ini{
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          height: 100%;
+          width: 100%;
+          background-attachment: fixed;
+         background-repeat: no-repeat;
+     }
+     .teo{
+          position: absolute;
+          top: 84%;
+          left: 15%;
+          width: 12%;
+          height: 10%;
+          background-color: #F5EEF8;
+          color: #161359;
+          border: 2px solid #161359;
+          border-radius: 30px;
+         font-family: Trebuchet MS;
+         font-size: 18px;
+
+     }
+     .prac{
+          position: absolute;
+          top: 84%;
+          left: 35%;
+          width: 12%;
+          height: 10%;
+          background-color: #F5EEF8;
+          color: #161359;
+          border: 2px solid #161359;
+          border-radius: 30px;
+         font-family: Trebuchet MS;
+         font-size: 18px;
+
+     }
+     .eva{
+          position: absolute;
+          top: 84%;
+          left: 55%;
+          width: 12%;
+          height: 10%;
+          background-color: #F5EEF8;
+          color: #161359;
+          border: 2px solid #161359;
+          border-radius: 30px;
+         font-family: Trebuchet MS;
+         font-size: 18px;
+
+     }
+     .boi{
+          position: absolute;
+          top: 96%;
+          left: 88%;
+          width: 10%;
+          height: 3%;
+          background-color: #F5EEF8;
+          color: #161359;
+          border: 2px solid #161359;
+          border-radius: 30px;
+         font-family: Trebuchet MS;
+         font-size: 18px;
+     }
+     .boi1{
+          position: absolute;
+          top: 90%;
+          left: 88%;
+          width: 10%;
+          height: 7%;
+          background-color: #F5EEF8;
+          color: #161359;
+          border: 2px solid #161359;
+          border-radius: 30px;
+         font-family: Trebuchet MS;
+         font-size: 18px;
+     }
+     .boi2{
+          position: absolute;
+          top: 88%;
+          left: 88%;
+          width: 10%;
+          height: 8%;
+          background-color: #F5EEF8;
+          color: #161359;
+          border: 2px solid #161359;
+          border-radius: 30px;
+         font-family: Trebuchet MS;
+         font-size: 18px;
+     }
+     .letra{
+          position: absolute;
+          top: 3%;
+          right: 4%;
+          left: 4%;
+          color: black;
+          font-family: Trebuchet MS;
+         font-size: 18px;
+     }
+     .cuadra{
+          position: absolute;
+          top: 25%;
+          left: 20%;
+          width: 10%;
+          height: 8%;
+          border: 2px solid #8A2BE2;
+          border-radius: 15px;
+          font-family: Trebuchet MS;
+     }
+     .cuadra1{
+          position: absolute;
+          top: 40%;
+          left: 20%;
+          width: 10%;
+          height: 8%;
+          border: 2px solid #8A2BE2;
+          border-radius: 15px;
+          font-family: Trebuchet MS;
+     }
+     .cuadra2{
+          position: absolute;
+          top: 55%;
+          left: 20%;
+          width: 10%;
+          height: 8%;
+          border: 2px solid #8A2BE2;
+          border-radius: 15px;
+          font-family: Trebuchet MS;
+     }
+     .cuadra3{
+          position: absolute;
+          top: 70%;
+          left: 20%;
+          width: 10%;
+          height: 8%;
+          border: 2px solid #8A2BE2;
+          border-radius: 15px;
+          font-family: Trebuchet MS;
+     }
+     .cuadra4{
+          position: absolute;
+          top: 40%;
+          left: 44%;
+          width: 10%;
+          height: 8%;
+          border: 2px solid #8A2BE2;
+          border-radius: 15px;
+          font-family: Trebuchet MS;
+     }
+     .envi{
+          position: absolute;
+          top: 52%;
+          left: 45.6%;
+          width: 8%;
+          height: 7%;
+          border: 2px solid #8A2BE2;
+          border-radius: 15px;
+          font-family: Trebuchet MS;
+     }
+
+  @media only screen and (max-width: 500px){
+     
+     .progre{
+          position: absolute;
+          display: none;
+
+     }
+     .ca1{
+          position: absolute;
+          display: none;
+     }
+     .ca2{
+          position: absolute;
+          display: none;
+     }
+     .ca3{
+          position: absolute;
+          display: none;
+     }
+     .titu{
+          position: absolute;
+          top: 5%;
+          left: 30%;
+          font-size: 40px;
+          color: aliceblue;
+          font-family: Trebuchet MS;
+     }
+     .titu1{
+          position: absolute;
+          top: -2%;
+          left: 3%;
+          font-size: 18px;
+          color: #7B68EE;
+          font-family: Trebuchet MS;
+     }
+     .titulo{
+          position: absolute;
+          top: -2%;
+          left: 3%;
+          font-size: 18px;
+          color: #7B68EE;
+          font-family: Trebuchet MS;
+     }
+     .caja{
+          position: absolute;
+          top: 120%;
+          left: 5%;
+          width: 90%;
+          height: 300%;
+          background-color: white;
+          border: 1px ;
+          border-radius: 30px;
+     }
+     .b1{
+          position: absolute;
+          top: 10%;
+          left: 5%;
+          width: 10%;
+          height: 7%;
+          color: black;
+          background-color:#F5EEF8 ;
+          border: 2px solid #8A2BE2;
+          border-radius: 20px;
+          font-family: Trebuchet MS;
+          font-size: 18px;
+     }
+      .b2{
+          position: absolute;
+          top: 34%;
+          left: 5%;
+          width: 10%;
+          height:7%;
+          color: black;
+          background-color:#F5EEF8 ;
+          border: 2px solid #8A2BE2;
+          border-radius: 20px;
+          font-family: Trebuchet MS;
+          font-size: 18px;
+
+
+     }
+     .b3{
+          position: absolute;
+          top: 57%;
+          left: 5%;
+          width: 10%;
+          height:7%;
+          color: black;
+          background-color:#F5EEF8 ;
+          border: 2px solid #8A2BE2;
+            border-radius: 20px;
+          font-family: Trebuchet MS;
+          font-size: 18px;
+
+     }
+     .b4{
+          position: absolute;
+          top: 79%;
+          left: 5%;
+          width: 10%;
+          height:7%;
+          color: black;
+          background-color:#F5EEF8 ;
+          border: 2px solid #8A2BE2;
+  border-radius: 20px;
+          font-family: Trebuchet MS;
+          font-size: 18px;
+     }
+     .progre{
+          position: absolute;
+          top: 19%;
+          left: 8%;
+          width: 90%;
+          height: 10%;
+          color: black;
+          
+     }
+     .p{
+          position: absolute;
+          top: 43%;
+          left: 0%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     }
+     .p1{
+          position: absolute;
+          top: 43%;
+          left: 16%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     }
+     .p2{
+          position: absolute;
+          top: 43%;
+          left: 30%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     }
+     .p3{
+          position: absolute;
+          top: 43%;
+          left: 40%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     }
+     .ca1{
+          position: absolute;
+          top: 43%;
+          left: 8%;
+          width: 90%;
+          height: 10%;
+          color: black;
+     }
+     .t{
+          position: absolute;
+          top: 45%;
+          left: 0%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     }
+     .t1{
+     
+          position: absolute;
+          top: 45%;
+          left: 15%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     
+     }
+     .ca2{
+          position: absolute;
+          top: 66%;
+          left: 8%;
+          width: 90%;
+          height: 10%;
+          color: black;
+
+               }
+     .tt{
+          position: absolute;
+          top: 50%;
+          left: 0%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     }
+      .tt1{
+          position: absolute;
+          top: 50%;
+          left: 15%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     }
+      .ca3{
+          position: absolute;
+          top:88%;
+          left: 8%;
+          width: 90%;
+          height: 10%;
+          color: black;
+     }
+     .le{
+          position: absolute;
+          top: 55%;
+          left: 0%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     }
+     .le1{
+          position: absolute;
+          top: 55%;
+          left: 15%;
+          color: #8A2BE2;
+          font-family: Trebuchet MS;
+     }
+     .caja2{
+           position: absolute;
+          top: 460%;
+          left: 5%;
+          width: 90%;
+          height: 115%;
+          background-color: white;
+          border: 1px;
+          border-radius: 30px;
+     }
+     .caja3{
+          position: absolute;
+          top: 630%;
+          left: 5%;
+          width: 90%;
+          height: 100%;
+          background-color: white;
+          border: 1px;
+         border-radius: 30px;
+
+     }
+     .cajai{
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          width: 100%;
+          height: 96%;
+          background-color:#4575C8;
+     }
+     .ini{
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          height: 100%;
+          width: 100%;
+          background-attachment: fixed;
+         background-repeat: no-repeat;
+     }
+     .teo{
+          position: absolute;
+          top: 84%;
+          left: 5%;
+          width: 20%;
+          height: 8%;
+          background-color: #F5EEF8;
+          color: #161359;
+          border: 2px solid #161359;
+          border-radius: 30px;
+          font-family: Trebuchet MS;
+          font-size: 15px;
+
+     }
+     .prac{
+          position: absolute;
+          top: 84%;
+          left: 30%;
+          width: 20%;
+          height: 8%;
+          background-color: #F5EEF8;
+          color: #161359;
+          border: 2px solid #161359;
+          border-radius: 30px;
+         font-family: Trebuchet MS;
+         font-size: 15px;
+
+     }
+     .eva{
+          position: absolute;
+          top: 84%;
+          left: 55%;
+          width: 25%;
+          height: 8%;
+          background-color: #F5EEF8;
+          color: #161359;
+          border: 2px solid #161359;
+          border-radius: 30px;
+         font-family: Trebuchet MS;
+         font-size: 15px;
+
+     }
+     .boi{
+          position: absolute;
+          top: 96%;
+          left: 88%;
+          width: 10%;
+          height: 3%;
+          background-color: #F5EEF8;
+          color: #161359;
+          border: 2px solid #161359;
+          border-radius: 30px;
+         font-family: Trebuchet MS;
+         font-size: 18px;
+     }
+     .boi1{
+          position: absolute;
+          top: 90%;
+          left: 88%;
+          width: 10%;
+          height: 7%;
+          background-color: #F5EEF8;
+          color: #161359;
+          border: 2px solid #161359;
+          border-radius: 30px;
+         font-family: Trebuchet MS;
+         font-size: 18px;
+     }
+     .boi2{
+          position: absolute;
+          top: 88%;
+          left: 88%;
+          width: 10%;
+          height: 8%;
+          background-color: #F5EEF8;
+          color: #161359;
+          border: 2px solid #161359;
+          border-radius: 30px;
+         font-family: Trebuchet MS;
+         font-size: 18px;
+     }
+     .letra{
+          position: absolute;
+          top: 3%;
+          right: 4%;
+          left: 4%;
+          color: black;
+          font-family: Trebuchet MS;
+         font-size: 18px;
+     }
+     .cuadra{
+          position: absolute;
+          top: 25%;
+          left: 20%;
+          width: 10%;
+          height: 8%;
+          border: 2px solid #8A2BE2;
+          border-radius: 15px;
+          font-family: Trebuchet MS;
+     }
+     .cuadra1{
+          position: absolute;
+          top: 40%;
+          left: 20%;
+          width: 10%;
+          height: 8%;
+          border: 2px solid #8A2BE2;
+          border-radius: 15px;
+          font-family: Trebuchet MS;
+     }
+     .cuadra2{
+          position: absolute;
+          top: 55%;
+          left: 20%;
+          width: 10%;
+          height: 8%;
+          border: 2px solid #8A2BE2;
+          border-radius: 15px;
+          font-family: Trebuchet MS;
+     }
+     .cuadra3{
+          position: absolute;
+          top: 70%;
+          left: 20%;
+          width: 10%;
+          height: 8%;
+          border: 2px solid #8A2BE2;
+          border-radius: 15px;
+          font-family: Trebuchet MS;
+     }
+     .cuadra4{
+          position: absolute;
+          top: 40%;
+          left: 44%;
+          width: 10%;
+          height: 8%;
+          border: 2px solid #8A2BE2;
+          border-radius: 15px;
+          font-family: Trebuchet MS;
+     }
+     .envi{
+          position: absolute;
+          top: 52%;
+          left: 45.6%;
+          width: 8%;
+          height: 7%;
+          border: 2px solid #8A2BE2;
+          border-radius: 15px;
+          font-family: Trebuchet MS;
+     }
+}
+</style>
+<div class="cajai">
+     <a name="ini"></a>
+
+<img src="ima.png" class="ini">
+<a href="#te"><button class="teo">TEORÍA</button></a>
+<a href="#pra"><button class="prac">PRÁCTICA</button></a>
+<a href="#eva"><button class="eva">EVALUACIÓN</button></a>
+
+</div>
+
+<div class="caja2">
+<a name="pra"></a>
+<div class="titu1"><h2>Practica</h2></div>
+<button onclick="progre()" class="b1">Caso 1</button>
+<br>
+<button onclick="ca1()" class="b2">Caso 2</button>
+<br>
+<button onclick="ca2()" class="b3">Caso 3</button>
+<br>
+<button onclick="ca3()" class="b4">Caso 4</button>
+
+
+<div class="progre">
+<input type="" name="dato1" required="" id="u">
+<input type="" name="dato2" required="" id="d">
+<input type="" name="dato3" required="" id="t">
+<button onclick="progresion()" class="envi1">enviar</button>
+
+<div class="p">Ecuación:<div id="resu"></div></div>
+<div class="p1">Distancia:<div id="dis"></div></div>
+<div class="p2">A1:<div id="au1"></div></div>
+<div class="p3">Progresión:<div id="pro"></div></div>
+</div>
+
+<div class="ca1">
+<input type="" name="dato1" required="" id="un" placeholder="D">
+<input type="" name="dato2" required="" id="doo" placeholder="A1">
+<button onclick="caso1()">enviar</button>
+
+<div class="t">Ecuación:<div id="resu1"></div></div>
+<div class="t1">Progresión:<div id="pro1"></div></div>
+</div>
+
+<div class="ca2">
+<input type="" name="dato1" required="" id="uno" placeholder="A1">
+<input type="" name="dato2" required="" id="dos" placeholder="An">
+<input type="" name="dato3" required="" id="tres" placeholder="n">
+
+<button onclick="caso2()">enviar</button>
+
+<div class="tt">Distancia:<div id="distan"></div></div>
+<div class="tt1">Progresión:<div id="pro2"></div></div>
+</div>
+
+<div class="ca3">
+<input type="" name="dato1" required="" id="uno1" placeholder="D">
+<input type="" name="dato2" required="" id="dos2" placeholder="An">
+<input type="" name="dato3" required="" id="tres3" placeholder="n">
+
+<button onclick="caso3()">enviar</button>
+
+<div class="le">A1:<div id="aun1"></div></div>
+<div class="le1">Progresión:<div id="pro3"></div></div>
+</div>
+
+<a href="#ini"><button class="boi1">INICIO</button></a>
+</div>
+
+
+<div class="caja3">
+     <a name="eva"></a>
+     <div class="titulo">
+     <br><br>
+          <h2>Evaluación</h2>
+     </div>
+     <a href="#ini"><button class="boi2">INICIO</button></a>
+
+
+
+<div style="display: none;" id="p1">
+<input type="text" id="pp1" readonly class="cuadra">
+<input type="text" id="pp2" readonly class="cuadra1">
+<input type="text" id="pp3" readonly class="cuadra2">
+<input type="text" id="pp4" readonly class="cuadra3">
+<input type="text" placeholder="Distancia" id="rec1" class="cuadra4">
+<button onclick="compro()" class="envi">Comprobar</button>
+</div>
+
+<div style="display: none;" id="p2">
+<div style="position: absolute; top: 43%; left: 10%; color: #8A2BE2; font-family: Trebuchet MS; font-size: 20px;">Distancia</div>
+<input type="text" id="dc2" placeholder="Distancia" readonly class="cuadra1">
+<div style="position: absolute; top: 57%; left: 15%; color: #8A2BE2; font-family: Trebuchet MS; font-size: 20px;">A1</div>
+<input type="text" id="a1c2" placeholder="A1" readonly class="cuadra2">
+<input type="text" id="rec2" placeholder="Ecuacion" class="cuadra4">
+<button onclick="compro1()" class="envi">Comprobar</button>
+</div>
+
+<div style="display: none;" id="p3">
+<div style="position: absolute; top: 43%; left: 17%; color: #8A2BE2; font-family: Trebuchet MS; font-size: 20px;">A1</div>
+<input type="text" id="tda1" class="cuadra1">
+<input type="text" id="tdar" class="cuadra2">
+<input type="text" id="rec3" class="cuadra4" placeholder="Distancia">
+<button onclick="compro2()" class="envi">Comprobar</button>
+</div> 
+
+<div style="display: none;" id="p4">
+    Distancia
+<input type="text" id="tdc3" class="cuadra1">
+<input type="text" id="tdarc3" class="cuadra2">
+<input type="text" id="rec4" placeholder="A1" class="cuadra4">
+<button onclick="compro3()" class="envi">Comprobar</button>
+</div>   
+
+</div>
+
+
+
+<div class="caja">
+     <div class="titulo"><br><br><h2>Teoria</h2></div>
+<div class="letra">
+<h3 style="color: #7B68EE;">PROGRESIÓN ARTIMÉTICA</h3>
+
+Una progresión aritmética es una sucesión numérica donde cada término, excepto el primero, es igual al número anterior más una cantidad constante denominada diferencia
+o distancia, representada con la letra d.
+<br>
+En otras palabas, podríamos decir que la progresión aritmética es el patrón que sigue la secuencia. Donde el patrón que sirve para determinar los términos que continúan en la secuencia, es sumando una cantidad fija (d) al número anterior.
+<br>
+Se denotan por Pa y entre cada término y el siguiente se escribe una coma.
+Ejemplo<br>
+
+ 
+<br><img src="ejemplo.png">
+<br> es una progresión aritmética cuya diferencia es 3 ya que:
+<br>
+<img src="ejemplo1.png">
+<br>
+Una progresión aritmética es creciente cuando su diferencia es positiva. Ejemplo.
+<img src="ejemplo2.png">
+<br>
+es creciente porque su diferencia es 
+<br>
+<img src="ejemplo3.png">
+<br><br>
+Una progresión aritmética es decreciente cuando su diferencia es negativa. Ejemplo.<br>
+<img src="ejemplo4.png">
+<br>
+es decreciente ya que su diferencia es 
+<br>
+<img src="ejemplo5.png">
+<br>
+<h3 style="color: #7B68EE;">ELEMENTOS Y DEDUCCIÓN DE LA FÓRMULA DEL TÉRMINO ENÉSIMO
+</h3>
+Sea la siguiente progresión:
+<br>
+<img src="ejemplo6.png">
+<br>
+en la que u es el término enésimo y cuya diferencia es d.
+<br>
+Por definición, en toda progresión aritmética, cada término es igual al anterior más la diferencia, por lo tanto:
+<br>
+<img src="ejemplo7.png">
+<br>
+y así sucesivamente.
+<br>
+<br>
+Se puede apreciar que cada término es igual al primero de la progresión a más tantas veces la diferencia como términos le preceden. Con base a este razonamiento, ésta ley se cumple para todos los términos, y, se tendrá que u será igual al primer término a más tantas veces como la diferencia como términos le preceden. Al ser u el término enésimo, le preceden n - 1 términos, por lo tanto:
+<br>
+<img src="ejemplo8.png">
+<br>
+Ejemplo: Hallar el noveno término de 
+<br>
+<img src="ejemplo9.png">
+<br>
+Solución.
+<br>
+<img src="ejemplo10.png">
+<br><br>
+<h3 style="color: #7B68EE;"> FÓRMULAS</h3>
+<img src="ejemplo11.png">
+</div>
+
+
+
+
+          <a name="te"></a>
+          <a href="#ini"><button class="boi">INICIO</button></a>
+
+
+</div>
+
+<script>
+	function progre() {
+     document.querySelector(".progre").style.display="block";
+     document.querySelector(".ca1").style.display="none";
+     document.querySelector(".ca2").style.display="none";
+     document.querySelector(".ca3").style.display="none";
+ 	}
+ 	function ca1() {
+     document.querySelector(".ca1").style.display="block";
+     document.querySelector(".ca2").style.display="none";
+     document.querySelector(".ca3").style.display="none";
+     document.querySelector(".progre").style.display="none";
+ 	}
+ 	function ca2() {
+     document.querySelector(".ca2").style.display="block";
+     document.querySelector(".progre").style.display="none";
+     document.querySelector(".ca1").style.display="none";
+     document.querySelector(".ca3").style.display="none";
+ 	}
+ 	function ca3() {
+     document.querySelector(".ca3").style.display="block";
+     document.querySelector(".ca1").style.display="none";
+     document.querySelector(".ca2").style.display="none";
+     document.querySelector(".progre").style.display="none";
+
+ 	}
+ 	function progresion(){
+     u=Number(u.value);
+     d=Number(d.value);
+     t=Number(t.value);
+     d1=d-u;
+     d2=t-d;
+     if(d1==d2){
+a1=Number(u);
+d=Number(d1);
+n=2;
+An=a1+(-1)*d;
+console.log(An+"+("+d+"n)");
+resu.innerHTML=An+"+("+d+"n)";
+dis.innerHTML=d;
+au1.innerHTML=a1;
+progre=[];
+     ciclo=0;
+     ipro=Number(a1);
+     while(ciclo<=10){
+     progre.push(ipro);
+     ipro=ipro+d;
+     console.log(progre[ciclo]);
+     ciclo=ciclo+1;
+     }
+pro.innerHTML=progre;
+     }
+     else{
+     	alert("La progresion esta mal formulada");
+     }
+ 	}
+
+ 	function caso1() {
+     d=Number(un.value);
+     a1=Number(doo.value);
+     An=a1+(d*-1);
+     progre=[];
+     ciclo=0;
+     ipro=Number(a1);
+     while(ciclo<=10){
+     progre.push(ipro);
+     ipro=ipro+d;
+     console.log(progre[ciclo]);
+     ciclo=ciclo+1;
+     }
+     console.log(An+"+("+d+"n)");
+     resu1.innerHTML=An+"+("+d+"n)";
+     pro1.innerHTML=progre;
+
+ 	}
+ 	function caso2() {
+          a1=Number(uno.value);
+          an=Number(dos.value);
+          n=Number(tres.value);
+
+    d=(an-a1)/(n-1);
+    console.log(d);
+     distan.innerHTML=d;
+     progre=[];
+     ciclo=0;
+     ipro=Number(a1);
+     while(ciclo<=10){
+     progre.push(ipro);
+     ipro=ipro+d;
+     console.log(progre[ciclo]);
+     ciclo=ciclo+1;
+     }
+     pro2.innerHTML=progre;
+ 	}
+ 	function caso3() {
+          d=Number(uno1.value);
+          an=Number(dos2.value);
+          n=Number(tres3.value);
+
+          a1=an-(n-1)*d;
+          console.log(a1);
+          progre=[];
+     ciclo=0;
+     ipro=Number(a1);
+     while(ciclo<=10){
+     progre.push(ipro);
+     ipro=ipro+d;
+     console.log(progre[ciclo]);
+     ciclo=ciclo+1;
+     }
+     pro3.innerHTML=progre;
+     aun1.innerHTML=a1;
+
+ 	}
+
+
+
+      var qp=Math.floor(Math.random()*(4-1)+1);
+    if(qp==1){
+    p1.style.display="block";
+    var nd=Math.floor(Math.random()*(1000-1)+1);
+    var np=Math.floor(Math.random()*(20-1)+1); 
+    np1=np+nd;
+    np2=np1+nd;
+    np3=np2+nd;
+    pp1.value=np;
+    pp2.value=np1; 
+    pp3.value=np2; 
+    pp4.value=np3;  
+    function compro(){
+        res1=rec1.value
+        if(nd==res1){
+            alert("Muy bien");
+        }
+        else{
+            alert("Mal");
+        }
+    }
+    } 
+    if(qp==2){
+    p2.style.display="block";
+    var nd=Math.floor(Math.random()*(1000-1)+1);
+    var np=Math.floor(Math.random()*(20-1)+1); 
+    dc2.value=nd;
+    a1c2.value=np; 
+    function compro1(){
+        an=np+(nd*-1);
+        ras=an+"+("+nd+"n)";
+        res2=rec2.value;
+        if(ras==res2){
+            alert("Muy bien");
+        }
+        else{
+            alert("Mal");
+        }
+    }
+    }  
+    if(qp==3){
+    nd=1;
+    np=5;
+    nx=np-nd;
+    na=4;
+    while((np-nd) % (na-1) != 0){
+    p3.style.display="block";
+    nd=Math.floor(Math.random()*(10-1)+1);
+    np=Math.floor(Math.random()*(120-20)+20); 
+    na=Math.floor(Math.random()*(20-2)+2);
+    }
+    tda1.value=nd;
+    tdar.value="A"+na+"= "+np; 
+    dp3=(np-nd)/(na-1);
+    function compro2(){
+        res3=rec3.value;
+        if(dp3==res3){
+            alert("Muy bien");
+        }
+        else{
+            alert("Mal");
+        }
+    }
+    }  
+    if(qp==4){
+    p4.style.display="block";
+    nd=Math.floor(Math.random()*(230-1)+1);
+    np=Math.floor(Math.random()*(120-20)+20); 
+    na=Math.floor(Math.random()*(20-2)+2);
+    tdc3.value=nd;
+    tdarc3.value="A"+na+"= "+np; 
+    a1dry=np-(na-1)*nd;
+    function compro3(){
+        res4=rec4.value;
+        if(a1dry==res4){
+            alert("Muy bien");
+        }
+        else{
+            alert("Mal");
+        }
+    }
+    }  
+    //p2.style.display="block";
+    //p3.style.display="block";
+    //p4.style.display="block";
+</script>
+</body>
+</html>
